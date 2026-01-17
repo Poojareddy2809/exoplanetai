@@ -59,14 +59,14 @@
 
         // --- Types & Data ---
         const PLANETS = [
-            { name: 'Mercury', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUWGBkaGRgYGBoXFxgYGBoYGBUXFx0YHSggGB0lHRcYIjEhJSkrLi4uGB8zODMtNygtLisBCgoKDQ0NDw0NDisZFR[...]",
-            { name: 'Venus', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMVFhUVFxcYFxcXGBgZFhUVGBkXFxkXFRUYHiggGBomGxUVIjEiJSkrLi4uFyAzODMtNygtLisBCgoKDg0OGxAQGy0lICUt[...]",
-            { name: 'Earth', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUWGBgWGBgYFxgaGRcaGBgXGBgYHRoaHSggGBolHR0YIjEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGi0lICUv[...]",
-            { name: 'Mars', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFRUVFRcXFhUVFRcVFRUVFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQGC0mHR0tL[...]",
-            { name: 'Jupiter', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCvREyVnrbWE7EnaIqPHfoCuAa4qsAUjN7A&s', icon: '🟠', color: '#D39C7E', details: 'Jupiter is the largest p[...]",
-            { name: 'Saturn', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUVFxUWGBUXFRgYGBUVFxYWFxcXFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0lHyY[...]",
-            { name: 'Uranus', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMVFRUXFRcVFRUVFRUVFhcXFRUXFhYVFRUYHSggGBolHRUXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGBAQFysdHR0[...]",
-            { name: 'Neptune', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP5zCmtgkQCmQJAG9hGFJ0FLUYKti6AHj_yA&s', icon: '🔵', color: '#6081FF', details: 'Neptune is the farthest [...]"
+            { name: 'Mercury', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUWGBkaGRgYGBoXFxgYGBoYGBUXFx0YHSggGB0lHRcYIjEhJSkrLi4uGB8zODMtNygtLisBCgoKDQ0NDw0NDisZFR[...]'},
+            { name: 'Venus', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMVFhUVFxcYFxcXGBgZFhUVGBkXFxkXFRUYHiggGBomGxUVIjEiJSkrLi4uFyAzODMtNygtLisBCgoKDg0OGxAQGy0lICUt[...]'},
+            { name: 'Earth', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUWGBgWGBgYFxgaGRcaGBgXGBgYHRoaHSggGBolHR0YIjEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGi0lICUv[...]'},
+            { name: 'Mars', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFRUVFRcXFhUVFRcVFRUVFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQGC0mHR0tL[...]'},
+            { name: 'Jupiter', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYCvREyVnrbWE7EnaIqPHfoCuAa4qsAUjN7A&s', icon: '🟠', color: '#D39C7E', details: 'Jupiter is the largest p[...]'},
+            { name: 'Saturn', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhIVFRUVFxUWGBUXFRgYGBUVFxYWFxcXFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0lHyY[...]'},
+            { name: 'Uranus', image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMVFRUXFRcVFRUVFRUVFhcXFRUXFhYVFRUYHSggGBolHRUXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGBAQFysdHR0[...]'},
+            { name: 'Neptune', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP5zCmtgkQCmQJAG9hGFJ0FLUYKti6AHj_yA&s', icon: '🔵', color: '#6081FF', details: 'Neptune is the farthest [...]'}
         ];
 
         const HUMAN_SURVIVAL_BASELINE = [
@@ -107,7 +107,7 @@
                 status: tData.score > 75 ? 'Habitable' : (tData.score > 40 ? 'Moderate' : 'Inhospitable'),
                 winner: sData.score >= tData.score ? source : target,
                 predictionText: `Comparison logic indicates ${sData.score >= tData.score ? source : target} is significantly more suitable for biological life based on known metrics.`,
-                detailedAnalysis: `Based on astronomical data: ${target} has a temperature of ${tData.temp} and gravity of ${tData.gravity}, compared to ${source}'s ${sData.temp} / ${sData.gravity}. T[...]"
+                detailedAnalysis: `Based on astronomical data: ${target} has a temperature of ${tData.temp} and gravity of ${tData.gravity}, compared to ${source}'s ${sData.temp} / ${sData.gravity}. T[...]`
             };
         }
 
@@ -192,7 +192,7 @@
             const items = [
                 {
                     title: "Habitability Score Distribution",
-                    description: "Visual representation of how the calculated habitability scores are distributed across the entire Kepler dataset, highlighting the rarity of high-scoring candidates."[...]"
+                    description: "Visual representation of how the calculated habitability scores are distributed across the entire Kepler dataset, highlighting the rarity of high-scoring candidates.",
                     src: "https://placehold.co/800x500/1e293b/white?text=Habitability+Score",
                     fallback: "Habitability+Score"
                 },
@@ -204,25 +204,25 @@
                 },
                 {
                     title: "Training & Testing Split",
-                    description: "Visual breakdown of the dataset partitioning. We utilized an 80/20 split to ensure the model had sufficient data to learn while reserving a distinct portion for unbia[...]"
+                    description: "Visual breakdown of the dataset partitioning. We utilized an 80/20 split to ensure the model had sufficient data to learn while reserving a distinct portion for unbia[...]",
                     src: "https://placehold.co/800x500/1e293b/white?text=Train+Test+Split",
                     fallback: "Train+Test+Split"
                 },
                 {
                     title: "Data Cleaning & Engineering",
-                    description: "Flowchart or summary of the preprocessing pipeline: handling missing values, removing noise, normalization, and the creation of the custom 'Habitable_Class' target va[...]"
+                    description: "Flowchart or summary of the preprocessing pipeline: handling missing values, removing noise, normalization, and the creation of the custom 'Habitable_Class' target va[...]",
                     src: "https://placehold.co/800x500/1e293b/white?text=Data+Cleaning",
                     fallback: "Data+Cleaning"
                 },
                 {
                     title: "Correlation Heatmap",
-                    description: "A heatmap visualizing the linear relationships between planetary features. Strong correlations (red/blue) help identify redundant variables before training the model.[...]"
+                    description: "A heatmap visualizing the linear relationships between planetary features. Strong correlations (red/blue) help identify redundant variables before training the model.",
                     src: "https://raw.githubusercontent.com/ExoHabitAI/assets/main/correlation_heatmap_placeholder.png",
                     fallback: "Correlation+Heatmap"
                 },
                 {
                     title: "Population Scatter Plot",
-                    description: "Planetary Radius vs. Period scatter plot. The highlighted cluster represents the 'Goldilocks Zone' candidates—planets with Earth-like size and orbital periods condu[...]"
+                    description: "Planetary Radius vs. Period scatter plot. The highlighted cluster represents the 'Goldilocks Zone' candidates—planets with Earth-like size and orbital periods condu[...]",
                     src: "https://raw.githubusercontent.com/ExoHabitAI/assets/main/radius_period_scatter_placeholder.png",
                     fallback: "Population+Scatter"
                 },
@@ -240,7 +240,7 @@
                 },
                 {
                     title: "Feature Importance Plot",
-                    description: "Derived from the Random Forest classifier, this chart ranks which specific planetary attributes (like Insolation Flux or Star Temp) were most critical in determining [...]",
+                    description: "Derived from the Random Forest classifier, this chart ranks which specific planetary attributes (like Insolation Flux or Star Temp) were most critical in determining [...",
                     src: "https://placehold.co/800x500/1e293b/white?text=Feature+Importance",
                     fallback: "Feature+Importance"
                 },
@@ -692,11 +692,19 @@
                         return;
                     }
 
-                    const prompt = `Scientifically compare ${sourceName} and ${targetName} for human habitability.\n                    Return detailed JSON including:\n                    - metrics: { temperature, gravity, atmosphere, distance, orbit, radiation } each with { source, target, delta, score }\n                    - sourceHabitabilityScore (0-100)\n                    - targetHabitabilityScore (0-100)\n                    - status (e.g., 'Habitable', 'Moderate', 'Uninhabitable')\n                    - winner (planet name)\n                    - predictionText (one concise summary sentence)\n                    - detailedAnalysis (extended reasoning 3-4 sentences)`;
+                    const prompt = `Scientifically compare ${sourceName} and ${targetName} for human habitability.
+                    Return detailed JSON including:
+                    - metrics: { temperature, gravity, atmosphere, distance, orbit, radiation } each with { source, target, delta, score }
+                    - sourceHabitabilityScore (0-100)
+                    - targetHabitabilityScore (0-100)
+                    - status (e.g., 'Habitable', 'Moderate', 'Uninhabitable')
+                    - winner (planet name)
+                    - predictionText (one concise summary sentence)
+                    - detailedAnalysis (extended reasoning 3-4 sentences)`;
 
                     // Try to fetch from API
                     const data = await callGeminiAPI(API_KEY, prompt);
-                     
+                    
                     setLoadingProgress(100);
                     
                     // Short delay for final progress animation
@@ -705,14 +713,14 @@
                         setLoading(false);
                         clearInterval(interval);
                     }, 500);
-                     
+                    
                 } catch (err) {
                     // FALLBACK FOR QUOTA ERRORS
                     console.warn("API Error (Quota/Service), switching to internal simulation.", err);
-                     
+                    
                     // Generate local mock data so the app doesn't break
                     const mockData = generateMockData(sourceName, targetName);
-                     
+                    
                     setLoadingProgress(100);
                     setTimeout(() => {
                         setComparison(mockData);
@@ -815,7 +823,7 @@
                                                 <CircularHabitabilityGauge score={comparison.sourceHabitabilityScore} label={`${sourceName} Status`} />
                                                 <CircularHabitabilityGauge score={comparison.targetHabitabilityScore} label={`${targetName} Status`} />
                                             </div>
-                                             
+                                            
                                             <div className="bg-white/5 backdrop-blur-md p-6 sm:p-10 rounded-[2.5rem] border border-white/10">
                                                 <h3 className="text-sm font-black uppercase tracking-widest text-slate-500 mb-8 text-center">Human Survival Baseline</h3>
                                                 {HUMAN_SURVIVAL_BASELINE.map((b, i) => (
@@ -932,7 +940,7 @@
                                         <div className="text-4xl mb-4">🌌</div>
                                         <h3 className="text-xl font-bold text-white mb-3">Explore Space</h3>
                                         <p className="text-slate-400 text-sm leading-relaxed">
-                                            The Explore Space page offers an educational overview of galaxies, planetary systems, and space phenomena. It presents curated scientific information throug[...]" 
+                                            The Explore Space page offers an educational overview of galaxies, planetary systems, and space phenomena. It presents curated scientific information throug[...]"
                                         </p>
                                     </div>
                                 </div>
